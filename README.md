@@ -1,13 +1,13 @@
 mybatis-generator-gui
 ==============
-
 mybatis-generator-gui是基于[mybatis generator](http://www.mybatis.org/generator/index.html)开发一款界面工具, 本工具可以使你非常容易及快速生成Mybatis的Java POJO文件及数据库Mapping文件。
 
-![MainUI](https://cloud.githubusercontent.com/assets/3505708/22870467/834ed1c2-f1e2-11e6-9ae5-650b88722a7c.png)
+![MainUI](http://o7kalf5h3.bkt.clouddn.com/mybatis.png)
+
 
 ### 注意事项
+* 本项目fork自"https://github.com/zouzg/mybatis-generator-gui",在原来基础上增加了**批量生成**。
 * 0.8.3版本请删除版本之前版本config目录下的sqlite3.db文件，重新`mvn install`安装
-
 ### 核心特性
 * 按照界面步骤轻松生成代码，省去XML繁琐的学习与配置过程
 * 保存数据库连接与Generator配置，每次代码生成轻松搞定
@@ -50,9 +50,6 @@ Eclipse or IntelliJ IDEA中启动, 找到```com.zzg.mybatis.generator.MainUI```�
     * 如何重现你的bug，包括你使用的系统，JDK版本，数据库类型及版本
     * 如果有任何的错误截图会更好
     
-### QQ群
-鉴于有的同学可能有一些特殊情况不能使用，我建了一个QQ群供大家交流。QQ群号：613911142
-
 - - -
 Licensed under the Apache 2.0 License
 
