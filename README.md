@@ -41,7 +41,7 @@ Eclipse or IntelliJ IDEA中启动, 找到```com.zzg.mybatis.generator.MainUI```�
 
 ### 文档
 更多详细文档请参考本库的Wiki
-* [Usage](https://github.com/astarring/mybatis-generator-gui/wiki/Usage-Guide)
+* [Usage](https://github.com/maochunguang/mybatis-generator-gui/wiki)
 
 
 ### 贡献
