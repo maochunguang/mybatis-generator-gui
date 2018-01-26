@@ -185,7 +185,10 @@
                                     </HBox>
                                     <HBox>
                                        <children>
-                                          <CheckBox fx:id="needToStringHashcodeEquals" mnemonicParsing="false" selected="true" text="生成toString/hashCode/equals方法" />
+                                          <!--<CheckBox fx:id="needToStringHashcodeEquals" mnemonicParsing="false" selected="true" text="生成toString/hashCode/equals方法" />-->
+                                          <CheckBox fx:id="needToString" mnemonicParsing="false" selected="true" text="生成toString方法" />
+                                          <CheckBox fx:id="needToHashcode" mnemonicParsing="false" selected="true" text="生成hashCode方法" />
+                                          <CheckBox fx:id="needToEquals" mnemonicParsing="false" selected="true" text="生成equals方法" />
                                        </children>
                                     </HBox>
                                     <HBox spacing="18.0">
@@ -202,11 +205,16 @@
                               </VBox>
                               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="8">
                                  <children>
-                                            <Button mnemonicParsing="false" onAction="#generateCode" text="代码生成">
+                                     <Button mnemonicParsing="false" onAction="#generateCode" text="生成选中表">
                                        <styleClass>
                                           <String fx:value="btn-success" />
                                           <String fx:value="btn" />
                                        </styleClass></Button>
+                                     <Button mnemonicParsing="false" onAction="#generateAllCode" text="生成全部表">
+                                         <styleClass>
+                                             <String fx:value="btn-success" />
+                                             <String fx:value="btn" />
+                                         </styleClass></Button>
                                     <Button mnemonicParsing="false" onAction="#saveGeneratorConfig" text="保存配置">
                                        <styleClass>
                                           <String fx:value="btn" />

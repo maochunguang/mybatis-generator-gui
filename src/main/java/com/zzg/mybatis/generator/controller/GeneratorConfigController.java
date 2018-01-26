@@ -25,7 +25,7 @@ import java.util.ResourceBundle;
  */
 public class GeneratorConfigController extends BaseFXController {
 
-    private static final Logger _LOG = LoggerFactory.getLogger(GeneratorConfigController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GeneratorConfigController.class);
 
     @FXML
     private TableView<GeneratorConfig> configTable;
@@ -72,7 +72,7 @@ public class GeneratorConfigController extends BaseFXController {
                         btn2.setOnAction(event -> {
                             try {
                                 // 删除配置
-                                _LOG.debug("item: {}", item);
+                                LOGGER.debug("item: {}", item);
                                 ConfigHelper.deleteGeneratorConfig(item.toString());
                                 refreshTableView();
                             } catch (Exception e) {

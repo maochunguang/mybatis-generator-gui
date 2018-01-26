@@ -40,7 +40,9 @@ public class GeneratorConfig {
 
 	private boolean comment;
 
-	private boolean needToStringHashcodeEquals;
+	private boolean needToString;
+	private boolean needToHashcode;
+	private boolean needToEquals;
 
 	private boolean annotation;
 
@@ -164,12 +166,28 @@ public class GeneratorConfig {
 		this.comment = comment;
 	}
 
-    public boolean isNeedToStringHashcodeEquals() {
-        return needToStringHashcodeEquals;
+    public boolean isNeedToString() {
+        return needToString;
     }
 
-    public void setNeedToStringHashcodeEquals(boolean needToStringHashcodeEquals) {
-        this.needToStringHashcodeEquals = needToStringHashcodeEquals;
+    public void setNeedToString(boolean needToString) {
+        this.needToString = needToString;
+    }
+
+    public boolean isNeedToHashcode() {
+        return needToHashcode;
+    }
+
+    public void setNeedToHashcode(boolean needToHashcode) {
+        this.needToHashcode = needToHashcode;
+    }
+
+    public boolean isNeedToEquals() {
+        return needToEquals;
+    }
+
+    public void setNeedToEquals(boolean needToEquals) {
+        this.needToEquals = needToEquals;
     }
 
     public boolean isAnnotation() {
